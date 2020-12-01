@@ -19,3 +19,5 @@ ___________
 ### Endpoints: 
 * {host: port}/msgs/{your-msg}
 * {host: port}/msgs/greet/{user}
+
+Ref : https://dzone.com/articles/k8s-knowhow-using-a-configmap
