@@ -28,6 +28,11 @@ spec:
           env:
             - name: CONFIG_LOCATION
               value: /config/application.properties
+            - name: GREETING_PREFIX
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-app-config
+                  key: greeter.prefix
           volumeMounts:
             - name: config-data
               mountPath: /config
